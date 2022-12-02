@@ -10,10 +10,10 @@
     <script>
       // FORMAS DE PAGAMENTO EM UMA LOJA
 
-      var preco = Number(prompt("Preço do produto R$: "));
+      let preco = Number(prompt("Preço do produto R$: "));
 
-      var Avista = preco - (preco * 0.10);
-      var parcelado = preco / 3;
+      let Avista = preco - (preco * 0.10);
+      let parcelado = preco / 3;
 
       alert("O Preço total é R$:  " + preco + "\nÀ Vista R$: " + Avista + "\n OU 3x de R$: " + parcelado.toFixed(2));
     </script>
