@@ -23,7 +23,11 @@ function calularMedia() {
     // altera o texto e estilo da cor do elemento outSituacao
     outSituacao.textContent = "Parabéns " + nome + "! Você foi aprovado(a)";
     outSituacao.style.color = "green";
-  } else {
+  } else if (media >=4) {
+    outSituacao.textContent = "Atenção " + nome + ". Você está de exame";
+    outSituacao.style.color = "blue";
+  } 
+  else {
     outSituacao.textContent = "Ops " + nome + "... Você foi reprovado(a)";
     outSituacao.style.color = "red";
   }
